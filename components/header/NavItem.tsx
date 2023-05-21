@@ -31,7 +31,7 @@ function NavItem({ item }: { item: INavItem }) {
                 src={image.src}
                 alt={image.alt}
                 width={300}
-                height={332}
+                height={200}
                 loading="lazy"
               />
             )}
