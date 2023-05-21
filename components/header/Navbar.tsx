@@ -29,7 +29,6 @@ function Navbar({ items, searchbar, logo }: {
         >
           <img src={logo} width={32} height={36} />
         </a>
-
       </div>
 
       {/* Desktop Version */}

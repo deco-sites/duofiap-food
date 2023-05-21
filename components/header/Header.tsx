@@ -53,7 +53,7 @@ function Header(
     products,
     navItems = [],
     suggestions,
-    logo
+    logo,
   }: Props,
 ) {
   const searchbar = { ..._searchbar, products, suggestions };
@@ -61,7 +61,7 @@ function Header(
     <>
       <header style={{ height: headerHeight }}>
         <div class="bg-base-100 fixed w-full z-50">
-          <Navbar items={navItems} searchbar={searchbar} logo={logo}/>
+          <Navbar items={navItems} searchbar={searchbar} logo={logo} />
         </div>
 
         <Modals
