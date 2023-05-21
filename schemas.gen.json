@@ -80,6 +80,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/duofiap-food/sections/AboutUs.tsx",
               "deco-sites/duofiap-food/sections/BannerGrid.tsx",
               "deco-sites/duofiap-food/sections/BannerPLP.tsx",
               "deco-sites/duofiap-food/sections/Carousel.tsx",
@@ -90,6 +91,7 @@
               "deco-sites/duofiap-food/sections/Features.tsx",
               "deco-sites/duofiap-food/sections/Footer.tsx",
               "deco-sites/duofiap-food/sections/Header.tsx",
+              "deco-sites/duofiap-food/sections/HeaderNew.tsx",
               "deco-sites/duofiap-food/sections/Highlights.tsx",
               "deco-sites/duofiap-food/sections/LinkTree.tsx",
               "deco-sites/duofiap-food/sections/NewHeader.tsx",
@@ -6931,6 +6933,27 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQWJvdXRVcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle"
+        },
+        "subtitle2": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle2"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/duofiap-food/sections/AboutUs.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
       "format": "image-uri",
@@ -8270,6 +8293,213 @@
       },
       "required": [],
       "title": "deco-sites/duofiap-food/components/header/Header.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvSGVhZGVyTmV3LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "menuHamburger": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Menu Hamburger"
+        },
+        "titleMenuDropdown": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Menu Dropdown"
+        },
+        "menuDropdown": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Menu Dropdown"
+        },
+        "menuOthers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Menu Others"
+        },
+        "logo": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Src"
+            },
+            "alt": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alt"
+            }
+          },
+          "required": [],
+          "title": "Logo"
+        },
+        "searchInput": {
+          "anyOf": [
+            {
+              "type": "boolean",
+              "const": true
+            },
+            {
+              "type": "boolean",
+              "const": false
+            }
+          ],
+          "type": "boolean",
+          "title": "Search Input"
+        },
+        "iconsUrls": {
+          "type": "object",
+          "properties": {
+            "search": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Search"
+            },
+            "heart": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Heart"
+            },
+            "location": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Location"
+            },
+            "person": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Person"
+            },
+            "shop": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Shop"
+            }
+          },
+          "required": [],
+          "title": "Icons Urls"
+        },
+        "button": {
+          "type": "object",
+          "properties": {
+            "active": {
+              "anyOf": [
+                {
+                  "type": "boolean",
+                  "const": true
+                },
+                {
+                  "type": "boolean",
+                  "const": false
+                }
+              ],
+              "type": "boolean",
+              "title": "Active"
+            },
+            "label": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Label"
+            },
+            "url": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Url"
+            }
+          },
+          "required": [],
+          "title": "Button"
+        },
+        "language": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Language"
+        }
+      },
+      "required": [
+        "logo"
+      ],
+      "title": "deco-sites/duofiap-food/sections/HeaderNew.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2QvY29tcG9uZW50cy91aS9IaWdobGlnaHRzLnRzeA==@Highlight": {
       "type": "object",
@@ -11091,6 +11321,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQWJvdXRVcy50c3g=": {
+      "title": "deco-sites/duofiap-food/sections/AboutUs.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQWJvdXRVcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/duofiap-food/sections/AboutUs.tsx"
+          ],
+          "default": "deco-sites/duofiap-food/sections/AboutUs.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQmFubmVyR3JpZC50c3g=": {
       "title": "deco-sites/duofiap-food/sections/BannerGrid.tsx",
       "type": "object",
@@ -11293,6 +11544,27 @@
             "deco-sites/duofiap-food/sections/Header.tsx"
           ],
           "default": "deco-sites/duofiap-food/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvSGVhZGVyTmV3LnRzeA==": {
+      "title": "deco-sites/duofiap-food/sections/HeaderNew.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvSGVhZGVyTmV3LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/duofiap-food/sections/HeaderNew.tsx"
+          ],
+          "default": "deco-sites/duofiap-food/sections/HeaderNew.tsx"
         }
       }
     },
@@ -12589,6 +12861,9 @@
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQWJvdXRVcy50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQmFubmVyR3JpZC50c3g="
         },
         {
@@ -12617,6 +12892,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvSGVhZGVyTmV3LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvSGlnaGxpZ2h0cy50c3g="

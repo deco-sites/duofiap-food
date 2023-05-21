@@ -74,3 +74,4 @@ deno.lock
 
 # db files
 .config.json
+components/header/NavItem.tsx
