@@ -31,8 +31,8 @@ function Newsletter() {
           Link your e-mail
         </span>
         <span class="text-sm text-primary-content">
-          Stay on top of the news and get 15% off 
-          your first purchase. For more information click here.
+          Stay on top of the news and get 15% off your first purchase. For more
+          information click here.
         </span>
       </div>
       <form
