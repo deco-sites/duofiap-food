@@ -15,7 +15,7 @@ export default function Contact({ informacao, link }: Props) {
         <form class="w-full">
           <div class=" flex justify-evenly mb-6">
             <div class="w-full  flex flex-col justify-start">
-              <label class="w-full mb-2" for="name">Nome</label>
+              <label class="w-full mb-2" for="name">First Name</label>
               <input
                 class="w-[200px] h-[30px] focus:border-transparent border-gray-300 border-[1px]"
                 id="name"
@@ -24,7 +24,7 @@ export default function Contact({ informacao, link }: Props) {
               />
             </div>
             <div class="  flex flex-col justify-start">
-              <label class="w-full mb-2" for="last">Sobre Nome</label>
+              <label class="w-full mb-2" for="last">Surname</label>
               <input
                 class="w-[200px] h-[30px] focus:border-transparent border-gray-300 border-[1px]"
                 id="last"
@@ -36,7 +36,7 @@ export default function Contact({ informacao, link }: Props) {
 
           <div class=" flex justify-evenly mb-6">
             <div class="w-full  flex flex-col justify-start">
-              <label class="w-full mb-2" for="email">Email</label>
+              <label class="w-full mb-2" for="email">E-mail</label>
               <input
                 class="w-[200px] h-[30px] focus:border-transparent border-gray-300 border-[1px]"
                 id="email"
@@ -45,7 +45,7 @@ export default function Contact({ informacao, link }: Props) {
               />
             </div>
             <div class=" flex flex-col justify-start">
-              <label class="w-full mb-2" for="number">Numero</label>
+              <label class="w-full mb-2" for="number">Number</label>
               <input
                 class="w-[200px] h-[30px] focus:border-transparent border-gray-300 border-[1px]"
                 id="number"
@@ -56,7 +56,7 @@ export default function Contact({ informacao, link }: Props) {
           </div>
 
           <div class="w-full flex flex-col justify-start mb-6">
-            <label class="mb-2" for="msn">Mensagem</label>
+            <label class="mb-2" for="msn">Mensage</label>
             <input
               class="w-full h-[80px] border-gray-300 border-[1px]"
               id="msn"
