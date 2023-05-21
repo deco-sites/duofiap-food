@@ -83,13 +83,16 @@
               "deco-sites/duofiap-food/sections/BannerGrid.tsx",
               "deco-sites/duofiap-food/sections/BannerPLP.tsx",
               "deco-sites/duofiap-food/sections/Carousel.tsx",
+              "deco-sites/duofiap-food/sections/Contact.tsx",
               "deco-sites/duofiap-food/sections/CookieConsent.tsx",
               "deco-sites/duofiap-food/sections/DesignSystem.tsx",
+              "deco-sites/duofiap-food/sections/FAQ.tsx",
               "deco-sites/duofiap-food/sections/Features.tsx",
               "deco-sites/duofiap-food/sections/Footer.tsx",
               "deco-sites/duofiap-food/sections/Header.tsx",
               "deco-sites/duofiap-food/sections/Highlights.tsx",
               "deco-sites/duofiap-food/sections/LinkTree.tsx",
+              "deco-sites/duofiap-food/sections/NewHeader.tsx",
               "deco-sites/duofiap-food/sections/ProductDetails.tsx",
               "deco-sites/duofiap-food/sections/ProductShelf.tsx",
               "deco-sites/duofiap-food/sections/SearchResult.tsx",
@@ -7289,6 +7292,24 @@
       "required": [],
       "title": "deco-sites/duofiap-food/components/ui/BannerCarousel.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQ29udGFjdC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "informacao": {
+          "type": "string",
+          "title": "Informacao"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "informacao",
+        "link"
+      ],
+      "title": "deco-sites/duofiap-food/sections/Contact.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors": {
       "type": "object",
       "properties": {
@@ -7502,7 +7523,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&b966eeb0bbdb3699ee11b12ce6a39cc4": {
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@4a6b95048bb6815848e22a8eaebabaa1&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7518,7 +7539,7 @@
           "required": []
         }
       ],
-      "title": "Colors&b966eeb0bbdb3699ee11b12ce6a39cc4"
+      "title": "4a6b95048bb6815848e22a8eaebabaa1&Colors"
     },
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -7603,7 +7624,7 @@
       "properties": {
         "fontFamily": {
           "type": "string",
-          "default": "'Albert Sans'",
+          "default": "'Poppins'",
           "title": "Font Family"
         },
         "styleInnerHtml": {
@@ -7621,7 +7642,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&b966eeb0bbdb3699ee11b12ce6a39cc4",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@4a6b95048bb6815848e22a8eaebabaa1&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -7635,6 +7656,66 @@
       },
       "required": [],
       "title": "deco-sites/duofiap-food/sections/DesignSystem.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRkFRLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "subtitleTop": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Subtítulo do Topo",
+          "title": "Subtitle Top"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string",
+                "title": "Question"
+              },
+              "answer": {
+                "type": "string",
+                "title": "Answer"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ]
+          },
+          "title": "Questions"
+        },
+        "titleTop": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Titulo do Rodapé",
+          "title": "Title Top"
+        },
+        "subtitlebot": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Subtítulo do Rodapé",
+          "title": "Subtitlebot"
+        },
+        "botao": {
+          "type": "string",
+          "description": "Texto CTA",
+          "title": "Botao"
+        }
+      },
+      "required": [
+        "questions",
+        "botao"
+      ],
+      "title": "deco-sites/duofiap-food/sections/FAQ.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2QvY29tcG9uZW50cy91aS9GZWF0dXJlcy50c3g=@Feature": {
       "type": "object",
@@ -8164,13 +8245,6 @@
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2QvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@Props": {
       "type": "object",
       "properties": {
-        "alerts": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Alerts"
-        },
         "searchbar": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2QvY29tcG9uZW50cy9zZWFyY2gvU2VhcmNoYmFyLnRzeA==@EditableProps",
           "title": "Search Bar"
@@ -8179,6 +8253,10 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2QvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@NavItem[]",
           "title": "Navigation items",
           "description": "Navigation items used both on mobile and desktop menus"
+        },
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Logo"
         },
         "products": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product[]|null",
@@ -8190,9 +8268,7 @@
           "title": "Enable Top Search terms"
         }
       },
-      "required": [
-        "alerts"
-      ],
+      "required": [],
       "title": "deco-sites/duofiap-food/components/header/Header.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2QvY29tcG9uZW50cy91aS9IaWdobGlnaHRzLnRzeA==@Highlight": {
@@ -8343,6 +8419,213 @@
       },
       "required": [],
       "title": "deco-sites/duofiap-food/components/ui/LinkTree.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvTmV3SGVhZGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "menuHamburger": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Menu Hamburger"
+        },
+        "titleMenuDropdown": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Menu Dropdown"
+        },
+        "menuDropdown": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Menu Dropdown"
+        },
+        "menuOthers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Menu Others"
+        },
+        "logo": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Src"
+            },
+            "alt": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alt"
+            }
+          },
+          "required": [],
+          "title": "Logo"
+        },
+        "searchInput": {
+          "anyOf": [
+            {
+              "type": "boolean",
+              "const": true
+            },
+            {
+              "type": "boolean",
+              "const": false
+            }
+          ],
+          "type": "boolean",
+          "title": "Search Input"
+        },
+        "iconsUrls": {
+          "type": "object",
+          "properties": {
+            "search": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Search"
+            },
+            "heart": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Heart"
+            },
+            "location": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Location"
+            },
+            "person": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Person"
+            },
+            "shop": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Shop"
+            }
+          },
+          "required": [],
+          "title": "Icons Urls"
+        },
+        "button": {
+          "type": "object",
+          "properties": {
+            "active": {
+              "anyOf": [
+                {
+                  "type": "boolean",
+                  "const": true
+                },
+                {
+                  "type": "boolean",
+                  "const": false
+                }
+              ],
+              "type": "boolean",
+              "title": "Active"
+            },
+            "label": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Label"
+            },
+            "url": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Url"
+            }
+          },
+          "required": [],
+          "title": "Button"
+        },
+        "language": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Language"
+        }
+      },
+      "required": [
+        "logo"
+      ],
+      "title": "deco-sites/duofiap-food/sections/NewHeader.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2QvY29tcG9uZW50cy9wcm9kdWN0L1Byb2R1Y3REZXRhaWxzLnRzeA==@Props": {
       "type": "object",
@@ -8857,7 +9140,11 @@
         },
         "name": {
           "type": "string",
-          "title": "Name"
+          "title": "The audience name (will be used on cookies).",
+          "description": "Add a meaningful short word for the audience name.",
+          "maxLength": 22,
+          "minLength": 3,
+          "pattern": "^[A-Za-z0-9_]+$"
         },
         "routes": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
@@ -8973,7 +9260,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -8991,13 +9278,13 @@
           ]
         }
       ],
-      "title": "95abd76f92dd138f258080286726977e|WorkflowRef"
+      "title": "6fafe0f553db3c0685828404a37be338|WorkflowRef"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef",
           "title": "Workflow"
         },
         "id": {
@@ -10867,6 +11154,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQ29udGFjdC50c3g=": {
+      "title": "deco-sites/duofiap-food/sections/Contact.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQ29udGFjdC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/duofiap-food/sections/Contact.tsx"
+          ],
+          "default": "deco-sites/duofiap-food/sections/Contact.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQ29va2llQ29uc2VudC50c3g=": {
       "title": "deco-sites/duofiap-food/sections/CookieConsent.tsx",
       "type": "object",
@@ -10901,6 +11209,27 @@
             "deco-sites/duofiap-food/sections/DesignSystem.tsx"
           ],
           "default": "deco-sites/duofiap-food/sections/DesignSystem.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRkFRLnRzeA==": {
+      "title": "deco-sites/duofiap-food/sections/FAQ.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRkFRLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/duofiap-food/sections/FAQ.tsx"
+          ],
+          "default": "deco-sites/duofiap-food/sections/FAQ.tsx"
         }
       }
     },
@@ -11006,6 +11335,27 @@
             "deco-sites/duofiap-food/sections/LinkTree.tsx"
           ],
           "default": "deco-sites/duofiap-food/sections/LinkTree.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvTmV3SGVhZGVyLnRzeA==": {
+      "title": "deco-sites/duofiap-food/sections/NewHeader.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvTmV3SGVhZGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/duofiap-food/sections/NewHeader.tsx"
+          ],
+          "default": "deco-sites/duofiap-food/sections/NewHeader.tsx"
         }
       }
     },
@@ -12248,10 +12598,16 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQ2Fyb3VzZWwudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQ29udGFjdC50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvQ29va2llQ29uc2VudC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRkFRLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvRmVhdHVyZXMudHN4"
@@ -12267,6 +12623,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvTGlua1RyZWUudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvTmV3SGVhZGVyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kdW9maWFwLWZvb2Qvc2VjdGlvbnMvUHJvZHVjdERldGFpbHMudHN4"
